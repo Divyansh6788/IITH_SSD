@@ -1,0 +1,1 @@
+select W.Essn , count(distinct(W.Pno)) as Cnt from (select Dnum from PROJECT where Pname = 'ProductY') as P inner join DEPARTMENT as D on D.Dnumber=P.Dnum inner join WORKS_ON as W on W.Essn=D.Mgr_ssn group by W.Essn;

@@ -1,0 +1,1 @@
+select CONCAT(E.Fname,' ',E.Minit,' ',E.Lname) as NAME , D.Mgr_ssn as SSN, D.Dnumber,D.Dname from EMPLOYEE as E inner join WORKS_ON as W on W.Essn=E.Ssn inner join DEPARTMENT as D on W.Essn=D.Mgr_ssn where W.Hours<40;

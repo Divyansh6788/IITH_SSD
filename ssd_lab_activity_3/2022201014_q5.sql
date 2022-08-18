@@ -1,0 +1,1 @@
+select D.Dnumber,D.Mgr_ssn,count(distinct(DE.Dependent_name)) as Cnt from (select distinct DL1.Dnumber from DEPT_LOCATIONS DL1 inner join DEPT_LOCATIONS DL2 on DL1.Dnumber=DL2.Dnumber where DL1.DLocation<>DL2.Dlocation) as DL inner join DEPARTMENT D on D.Dnumber=DL.Dnumber inner join DEPENDENT DE on DE.Essn=D.Mgr_ssn group by D.Dnumber , D.Mgr_ssn;

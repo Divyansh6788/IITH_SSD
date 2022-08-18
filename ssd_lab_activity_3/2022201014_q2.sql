@@ -1,0 +1,1 @@
+select CONCAT(E.Fname,' ',E.Minit,' ',E.Lname) as Name , E.Super_ssn , D.Dnumber,count(distinct(E.Ssn)) as Cnt from EMPLOYEE E inner join DEPARTMENT as D on D.Mgr_ssn=E.Super_ssn group by E.Fname,E.Minit,E.Lname,E.Super_ssn,D.Dnumber order by Cnt;

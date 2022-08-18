@@ -1,0 +1,1 @@
+select DP.Dnumber,DP.Dname,count(distinct(DL.Dlocation)) from (select Essn,Sex from DEPENDENT where sex='F' group by Essn,sex having count(sex)>1) as D inner join DEPARTMENT as DP on DP.Mgr_ssn=D.Essn inner join DEPT_LOCATIONS DL on DL.Dnumber=DP.Dnumber group by DP.Dnumber ,DP.Dname;
