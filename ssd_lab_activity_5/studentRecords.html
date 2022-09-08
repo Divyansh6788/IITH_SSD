@@ -1,0 +1,66 @@
+<!Doctype html>
+<html>
+    <style>
+    table, th, td {
+        border:1px solid black;
+      }
+      </style>
+<head>
+    <title>
+        
+        Registrar 
+    </title>
+    <link rel="stylesheet" href="second.css">
+</head>
+<div class=first>
+<body>
+    <form id="form" >
+        <label for="Name">
+            Roll Number:
+        </label>
+        <input type="text" id="Roll" name="Name">
+        <label for="Name">
+            Name:
+        </label>
+        <input type="text" id="Name" name="Name">
+        <br>
+        <br>
+        <button class = "r" type="button" onclick="Add_elem()">Add New</button>
+        
+    </form>
+    <br>
+    <br>
+    <br>
+<table class="mid" id="table1">
+    <tr>
+      <th>Roll Number</th>
+      <th>Name</th>
+      
+    </tr>
+   
+  </table>
+  <br>
+  <br>
+  <br>
+  
+  <div>
+    <button class="p" type="button" onclick="Del_elem()">Delete First Row</button>
+
+    <script>
+        function Add_elem() {
+          var table = document.getElementById("table1");
+          var row = table.insertRow(1);
+          var roll = row.insertCell(0);
+          var name = row.insertCell(1);
+          var input1 = document.getElementById("Roll").value;
+          var input2 = document.getElementById("Name").value;
+          roll.innerHTML = input1;
+          name.innerHTML = input2;
+        }
+        function Del_elem() {
+            document.getElementById("table1").deleteRow(1);
+          }
+        </script>
+        
+  </body>
+  <html>
