@@ -1,0 +1,60 @@
+.center {
+    text-align: center;
+    border: 3px solid green;
+  }
+
+  .txt{
+    font-weight: bold;
+font-style: italic;
+font-size: 150%;
+  }
+
+  .ex{
+    text-align: right;
+    clear: both;
+    float:left;
+    margin-right:10px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 100%;
+  }
+
+  .mg{
+    margin-right:10px;
+  }
+  .fl
+  {
+    display: flex;
+  }
+  label, input {
+    display: block;
+}
+
+label {
+    margin-bottom: 20px;
+}
+
+
+#div1, #div2 {
+    float: left;
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+  .button{
+    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;}
+
+  .ml
+  {
+    margin-left: 30%;
+  }

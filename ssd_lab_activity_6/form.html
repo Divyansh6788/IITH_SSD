@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="first.css">
+</head>
+<h1 class="center">
+    team form
+    </h1>
+    
+    
+      
+<body>
+    <script src="main.js">
+    </script>
+    <pre></pre>
+    <form name="Submission">
+        <div class="fl">
+        <label class = "txt"  for="man_name">Manager Name:          </label><pre></pre> 
+        <input  type="text" id="man_name" name="man_name"><br><br><br>
+           </div>
+            
+           <div class="fl">
+        <label class = "txt"  for="email">Group Email:          </label><pre></pre> 
+        <input type="email" id="email" name="email"><br><br><br>
+                </div>
+                <div class="fl">
+        <label class = "txt"  for="Sv_uname">Server Username:           </label><pre></pre> 
+        <input  type="text" id="Sv_uname" name="Sv_uname"><br><br><br>
+    </div>
+    <div class="fl">
+        <label class = "txt"  for="password"> Password :            </label><pre></pre> 
+        <input  type="password" id="password" name="password"><br><br><br>
+            </div>
+            <div class="fl">
+        <label class = "txt"  for="c_pass">Confirm Password:            </label><pre></pre> 
+        <input type="password" id="c_pass" name="c_pass"><br><br><br>
+    </div>
+    <div class="fl">
+        <label class = "txt"  for="team_lead">Team Lead:            </label><pre></pre> 
+        <select  name="team_lead" id="team_lead">
+            <option value="Divyansh">Divyansh</option>
+            <option value="Devesh">Devesh</option>
+            <option value="Shivam">Shivam</option>
+            <option value="Gunank">Gunank</option>
+          </select><br><br><br>
+        </div>
+        <div class="fl">
+        <label class = "txt"   for="Sv_uname">Server Username:              </label><pre></pre> 
+        <input type="text" id="Sv_uname" name="Sv_uname"><br><br><br>
+    </div>
+        
+   
+    <div style="width:20%; height: 100px; float: left; "> 
+      <p class ="txt">Team Placement</p>
+      </div>
+      <div style="width: 80%; height: 400px; float: right; "> 
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p  draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">Tony</p>
+        <p  draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">Steve</p>
+        <p  draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">Bruce</p>
+        <p  draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">Thor</p>
+        <p  draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">Natasha</p>
+        <p  draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">Sprint</p>
+      </div>
+      
+      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+      <br>
+      <br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      
+      <button class="button" onclick="alert1()">Submit</button>
+</form>
+<script>
+
+  function alert1() {
+ 
+    alert("This is Alert");
+  }
+</Script>
+</body>
+</html>
